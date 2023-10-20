@@ -1,3 +1,4 @@
+import { type } from "os"
 import { MouseEventHandler } from "react"
 
 export type CustomButtonProps = {
@@ -5,4 +6,9 @@ export type CustomButtonProps = {
     containerStyles? : string,
     handleClick?: MouseEventHandler<HTMLButtonElement>
     btnType?: "button" | "submit"
+}
+
+export type SearchManufacturerProps = {
+    manufacturer: string, 
+    setManufacturer: (manufacturer: string) => void
 }
