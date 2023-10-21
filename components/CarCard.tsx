@@ -73,8 +73,8 @@ const CarCard = ({ car }: CarCardProps) => {
                             handleClick={() => setIsOpen(true)}
                         />
                     </div>
-
                 </div>
+                <CarDetails />
             </div>
         </div>
     )
