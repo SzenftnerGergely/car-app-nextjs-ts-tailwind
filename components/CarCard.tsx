@@ -5,6 +5,7 @@ import Image from "next/image"
 import { CarProps } from '@/types/model'
 import { calculateCarRent } from '@/utils'
 import CustomButton from './CustomButton'
+import CarDetails from './CarDetails'
 
 type CarCardProps = {
     car: CarProps
