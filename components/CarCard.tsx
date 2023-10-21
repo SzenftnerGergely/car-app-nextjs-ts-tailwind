@@ -36,7 +36,7 @@ const CarCard = ({ car }: CarCardProps) => {
                 </p>
 
                 <div className='relative w-full h-40 my-3 object-contain'>
-                    <Image src="/hero.png" alt='car model'
+                    <Image src="/hero.png" sizes="95" alt='car model'
                         fill priority className='object-contain'
                     />
                 </div>
@@ -71,11 +71,16 @@ const CarCard = ({ car }: CarCardProps) => {
                             textStyles="text-white text-[1rem]
                             leading-[1rem] font-bold"
                             rightIcon="/right-arrow.svg"
-                            handleClick={() => setIsOpen(true)}
+                            handleClick={() => {setIsOpen(true)}}
                         />
                     </div>
                 </div>
-                <CarDetails />
+                
+                <CarDetails 
+                    isOpen={isOpen}
+                    closeModal={() => setIsOpen(false)}
+                    car={car}
+                />
             </div>
         </div>
     )
