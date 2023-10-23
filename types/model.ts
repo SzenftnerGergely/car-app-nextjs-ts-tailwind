@@ -52,3 +52,8 @@ export type CustomFilterProps = {
   title: string,
   options: OptionProps[]
 }
+
+export type SchowMoreProps = {
+  pageNumber: number,
+  isNext: boolean
+}
