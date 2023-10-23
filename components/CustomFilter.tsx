@@ -11,7 +11,7 @@ const CustomFilter = ({ title, options }: CustomFilterProps) => {
   const [selected, setSelected] = useState(options[0])
   const router = useRouter()
 
-  const handleUpdateParams = (e: {type: string, value: string}) => {
+  const handleUpdateParams = (e: {title: string, value: string}) => {
     const newPathName = updateSearchParams(title, e.value.toLocaleLowerCase())
   
     router.push(newPathName, { scroll: false })
